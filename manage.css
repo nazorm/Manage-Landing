@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+}
+..container{
+    width: 100%;
+}
+.background-image{
+    width: 100%;    
+}
+
+.hamburger{
+    float: right;
+}
+.nav-area{
+    position: absolute;
+    top: 50px;
+    width: 90%;
+    margin: 0 10px;
+}
+.desktopNav-area{
+    display: none;
+}
+.image-overlay{
+    width: 80%;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+h1{
+    margin: 40px 0 10px;
+    font-family: "Be Vietnam";
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(228, 39%, 23%);
+    text-align: center;
+}
+.intro-text{
+    font-weight: 400;
+    font-family: "Be Vietnam";
+   padding : 0 30px;
+   font-size: 16px;
+   margin-top: 0;
+   color: hsl(227, 12%, 61%);
+}
+.btn{
+   font-size: 15px;
+   font-weight: bold;
+   color: white;
+   padding: 10px 25px;
+   border-radius: 20px;
+   border: 1px solid transparent;
+   margin-left: 105px;
+   background-color: hsl(12, 88%, 59%);
+}
+.btn:hover, .btn-simplifyWork{
+cursor: pointer;
+}
+h3{
+    color: hsl(228, 39%, 23%);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Be Vietnam";
+    }
+    .diffhead-text{
+        text-align: center;
+        padding: 0 35px 0;
+        font-size: 16px;
+        color: hsl(227, 12%, 61%);
+    }
+    .diffsubhead-number{
+        padding: 5px;
+        text-align: center;
+        color: white;
+        margin: 0;
+        background-color: hsl(12, 88%, 59%);
+        width: 50px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+    .diffsubhead{
+        display: flex;
+        padding: 0;
+        background-color: hsl(13, 100%, 96%);
+        
+    }
+    .diffsubhead-text{
+        align-self: center;
+        margin: 0 0 0 10px ;
+    }
+    .diff-text{
+        color: hsl(227, 12%, 61%);
+        font-size: 16px;
+        padding: 10px;
+    }
+    .carousel-track{
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        width: 100%;
+        padding-top: 35px;
+    }
+    .carousel{
+        width: 100%;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+    }
+    .testimonial{
+        width: 100%;
+        text-align: center;
+        background-color: hsl(0, 0%, 98%);
+        scroll-snap-align: center;
+    }
+    .testimonial-image{
+        width: 18%;
+        margin-top: -10%;
+    }
+    .testimonial-text{
+        text-align: center;
+        color: hsl(227, 12%, 61%);
+        padding:  10px 30px 30px;
+        margin-top: 0;
+    }
+    h5{
+        text-align: center;
+        color: hsl(228, 39%, 23%);
+        font-size: 18px;
+        font-family: "Be Vietnam";
+        margin : 10px 0 0 0;
+    }
+    .round{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid hsl(12, 88%, 59%);
+    }
+    .scrollEvent{
+        justify-content: center;
+        margin: 10px 0 50px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 12px);
+    }
+    .simplifyWork{
+        background-color: hsl(12, 88%, 59%);
+        text-align: center;
+        padding: 30px 30px 50px 30px;
+        margin:30px 0 0 ;
+    }
+    .simplifyWork-text{
+        color: white;
+    }
+    .btn-simplifyWork{
+        background-color: white;
+        color: hsl(12, 88%, 59%);
+        padding: 10px 25px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+    .footer{
+        text-align: center;
+        background-color : hsl(233, 12%, 13%);
+    }
+    .updates-area{
+        padding-top: 50px;
+    }
+    .update-input{
+        background-color: white;
+        color: hsl(0, 0%, 98%);
+        border-radius: 20px;
+        border: 1px solid transparent;
+        padding: 10px 25px;
+        margin-bottom: 45px;
+    }
+    .footerbtn{
+        border-radius: 20px;
+        background-color: hsl(12, 88%, 59%);
+        color: white;
+        border: 1px solid transparent;
+        padding:  10px 20px;
+
+    }
+    .list{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .ul{
+        list-style: none;
+        color: white;
+        
+        font-family: "Be Vietnam";
+    }
+    li{
+        text-align: start;
+    }
+    .icons{
+        margin: 40px 0;
+    }
+    .icons a img{
+       width: 30px;
+        margin: 0  15px;
+    }
+    .footer-logo{
+        fill: black;
+        margin-bottom: 40px;
+    }
+    .attribution{
+       font-size: 12px;
+    }
+    .copyright{
+        color: hsl(0, 0%, 98%);
+        font-family: "Be Vietnam";
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .updates-area__desktop{
+        display: none
+    }
+/*Desktop Styles*/
+@media only screen and (min-width: 960px){
+    .container{
+        width: cover;
+    }
+    .nav-area{
+        display: none;
+    }
+    .background-image{
+        width: 30%;
+      
+
+    }
+    
+    .desktopNav-area{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 3% ;
+        position: absolute;
+        top: 3%;
+    }
+    .desktopNav-area span{
+        word-spacing: 1em;
+        
+    }
+    .desktopNav-area span a{
+        color: hsl(233, 12%, 13%);
+        text-decoration: none;
+        font-family: "Be Vietnam";
+    }
+    .desktopNav-area span a:hover{
+        color: hsl(227, 12%, 61%);
+    }
+    
+    .desktopheader-btn{
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        padding: 7px 25px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+        background-color: hsl(12, 88%, 59%);
+    }
+    .desktopheader-btn:hover{
+cursor: pointer;
+    }
+    .image-overlay{
+        width: 28%;
+        margin-left: 58%;
+        margin-top: 2%;
+    }
+    .intro-section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .desktopintro-text {
+        align-self: center;
+       width: 450px;
+        text-align: start;
+      
+    }
+    
+   .intro-section h1  {
+    text-align: start;
+    padding:  0 60px;
+   }
+   .intro-text{
+    text-align: start;
+    padding:  0 60px;
+    width: 90%;
+   }
+  .different-section{
+      display: flex;
+      width: 100%;
+      
+      margin-top: 8%;
+      justify-content: space-between;
+  }
+  .desktop-diff{
+      width: 400px;  
+  }
+  .differences{
+      width: 50%;
+  }
+  .different-section h3{
+    width: 120%;
+      text-align: start;
+      padding:  0 60px;
+  }
+  .diffhead-text{
+      text-align: start;
+      padding:  0 60px;
+  }
+  .diff-text{
+      width: 60%;
+      padding:  0 60px;;
+  }
+  .diffsubhead{
+      background-color: white;
+  }
+  .testimonial-section{
+      width: 100%;
+      text-align: center ;
+  }
+  .testimonial-image{
+      width: 25%;
+  }
+  .testimonial{
+      width: 100%; 
+      scroll-snap-align: none;
+  }
+  .scrollEvent{
+      display: none;
+  }
+  .carousel-track{
+      padding-top: 5%;
+      display: grid;
+      grid-gap: 1%;
+      width: 100%;
+        grid-template-columns: repeat(4, 24.2%);
+      
+  }
+  .carousel{
+margin-bottom: 5%;
+overflow: hidden;
+width: 100%;
+}
+   .simplifyWork{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+   }
+   .simplifyWork h1{
+       margin: 0;
+       text-align: start;
+       width: 35%;
+       padding: 0 60px;
+   }
+   .btn-simplifyWork{
+   align-self: center;
+   }
+   .updates-area{
+       display: none;
+   }
+   .updates-area__desktop{
+       display: inline;
+       width: 40%;
+   }
+   .desktopupdate-input{
+    background-color: white;
+    color: hsl(0, 0%, 98%);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 10px 25px;
+    margin-bottom: 45px;
+}
+.desktopfooterbtn{
+    border-radius: 20px;
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    border: 1px solid transparent;
+    padding:  10px 20px;
+}
+.desktopfooterbtn:hover{
+    cursor: pointer;
+    color: hsl(12, 88%, 59%);
+    background-color: hsl(13, 100%, 96%);
+}
+.footer{
+    padding-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.desktopgrid-reverse{ 
+    width: 75%;
+    display: grid;
+
+    grid-template-columns: repeat(2, 37.5%);
+}
+}
